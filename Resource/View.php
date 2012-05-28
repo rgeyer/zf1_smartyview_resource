@@ -32,22 +32,6 @@ class ZSmarty_Resource_View extends Zend_Application_Resource_View {
 			$viewRenderer = Zend_Controller_Action_HelperBroker::getStaticHelper('ViewRenderer');
 			$viewRenderer->setViewSuffix('tpl');
 			$viewRenderer->setView($this->_view);
-			
-			// ensure we have layout bootstraped
-			#$this->getBootstrap()->bootstrap('Layout');
-			// set the tpl suffix to layout also
-			#$layout = Zend_Layout::getMvcInstance();
-			#$layout->setViewSuffix('tpl');
-			
-			/*if(isset($options['doctype'])) {
-				$this->_view->doctype()->setDoctype(strtoupper($options['doctype']));
-				if(isset($options['charset']) && $this->_view->doctype()->isHtml5()) {
-					$this->_view->headMeta()->setCharset($options['charset']);
-				}
-			}
-			if(isset($options['contentType'])) {
-				$this->_view->headMeta()->appendHttpEquiv('Content-Type', $options['contentType']);
-			}*/
 		}
 		
 		return $this->_view;
