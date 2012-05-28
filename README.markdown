@@ -24,19 +24,21 @@ APPLICATION_PATH "/views/scripts/index/index.tpl"
 ```
 
 # Requirements
-Smarty 3.x (probably would work with 2.x also)
-Zend Framework 1.11
+* Smarty 3.x (probably would work with 2.x also)
+* Zend Framework 1.11
 
 # Usage
 Simply add this as a submodule to your project (if you're using git).
 
-  git submodule add git://github.com/rgeyer/zf1_smartyview_resource.git library/ZSmarty
+```bash
+git submodule add git://github.com/rgeyer/zf1_smartyview_resource.git library/ZSmarty
+```
 
 Or, if you're using some other VCS, simply put the files from this project in ~/library/ZSmarty.
 
 Create the directories APPLICATION_PATH "/tmp/smarty_compile" and APPLICATION_PATH "/tmp/smarty_cache" and make them writable by your apache process/user
 
-Then add the following to your application config file.
+Lastly add the following to your application config file.
 
 ```ini
 autoloadernamespaces[] = "ZSmarty_"
