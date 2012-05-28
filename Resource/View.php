@@ -26,9 +26,7 @@ class ZSmarty_Resource_View extends Zend_Application_Resource_View {
 	public function getView() {
 		if(null == $this->_view) {
 			$options = $this->getBootStrap()->getOption('smarty');
-			$this->_view = new ZSmarty_Smarty($options);
-
-			print_r($options);
+			$this->_view = new ZSmarty_ZSmarty($options);
 			
 			// setup viewRenderer with suffix and view
 			$viewRenderer = Zend_Controller_Action_HelperBroker::getStaticHelper('ViewRenderer');

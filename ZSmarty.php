@@ -4,7 +4,7 @@
  * Some ideas borrowed from http://devzone.zend.com/article/120
  */
 
-class ZSmarty_Smarty extends Zend_View_Abstract
+class ZSmarty_ZSmarty extends Zend_View_Abstract
 {
     /**
      * Instance of Smarty
