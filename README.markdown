@@ -66,3 +66,4 @@ This is heavily inspired by a blog post by Gediminas.  In fact the ~/ZSmarty.php
 http://gediminasm.org/article/smarty-3-extension-for-zend-framework
 
 # TODO
+Refactor into zf1_plugins
